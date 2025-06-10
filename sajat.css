@@ -1,0 +1,26 @@
+.form-wrapper {
+    width: 100%; /* A wrapper kitölti a teljes szélességet */
+    display: flex; /* Flexbox használata a középre igazításhoz */
+    justify-content: center; /* Vízszintesen középre igazítja a gyermek elemet */
+    margin-top: 20px; /* Egy kis térköz felülről, opcionális */
+    margin-bottom: 20px; /* Egy kis térköz alulról, opcionális */
+}
+
+/* A form elemhez beállítjuk az 50% szélességet */
+.w3-card-4 {
+    width: 50%; /* Itt állítjuk be az 50% szélességet */
+    max-width: 600px; /* Opcionális: maximum szélesség, hogy ne legyen túl nagy nagyobb képernyőkön */
+}
+
+/* Reszponzivitás: Kisebb képernyőkön legyen az űrlap szélesebb */
+@media (max-width: 768px) {
+    .w3-card-4 {
+        width: 80%; /* Kisebb képernyőn 80% szélesség */
+    }
+}
+
+@media (max-width: 480px) {
+    .w3-card-4 {
+        width: 95%; /* Mobil nézetben szinte teljes szélesség */
+    }
+}
